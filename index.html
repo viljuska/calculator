@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="sr_RS">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Calculator</title>
+	<link rel="stylesheet" href="/dist/styles/main.css">
+</head>
+<body>
+<div class="container">
+	<div class="calculator" id="calculator">
+		<div class="calculator__screen">
+			<span class="calculator__previous" id="previous-item"></span>
+			<span class="calculator__current" id="current-item"></span>
+		</div>
+		<div class="calculator__digits">
+			<button class="btn" data-func="clear">AC</button>
+			<button class="btn" data-func="delete">CL</button>
+			<button class="btn" data-func="percent">&percnt;</button>
+			<button class="btn" data-func="/">&divide;</button>
+			<button class="btn" data-num="7">7</button>
+			<button class="btn" data-num="8">8</button>
+			<button class="btn" data-num="9">9</button>
+			<button class="btn" data-func="*">&times;</button>
+			<button class="btn" data-num="4">4</button>
+			<button class="btn" data-num="5">5</button>
+			<button class="btn" data-num="6">6</button>
+			<button class="btn" data-func="-">&minus;</button>
+			<button class="btn" data-num="1">1</button>
+			<button class="btn" data-num="2">2</button>
+			<button class="btn" data-num="3">3</button>
+			<button class="btn" data-func="+">&plus;</button>
+			<button class="btn span-2" data-num="0">0</button>
+			<button class="btn" data-num=".">&period;</button>
+			<button class="btn" data-func="equal">&equals;</button>
+		</div>
+	</div>
+</div>
+
+<script defer src="/dist/scripts/main.js"></script>
+</body>
+</html>

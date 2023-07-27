@@ -1,0 +1,19 @@
+@import "components/variables";
+@import "components/bootstrap";
+@import "components/reboot";
+@import "components/functions";
+@import "layouts/calculator";
+
+:root {
+  --primary: #18202a;
+  --secondary: #37474f;
+  --ternary: #e5e5e5;
+}
+
+.container {
+  display: flex;
+  place-content: center;
+  place-items: center;
+  height: 100vh;
+  min-height: 500px;
+}

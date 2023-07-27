@@ -1,0 +1,49 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+	"build": "webpack --progress --config webpack.config.js --mode=development",
+	"build:production": "webpack --mode=production --progress --config webpack.config.js",
+	"watch": "webpack --watch --progress --config webpack.config.js --mode=development",
+	"start": "webpack serve --progress --config webpack.config.js",
+	"browsers-list": "npx browserslist@latest --update-db"
+  },
+  "repository": {
+	"type": "git",
+	"url": "git+https://github.com/viljuska/calculator"
+  },
+  "keywords": [],
+  "author": "Stefan Jocić <stefan_jocic@hotmail.com> (https://www.linkedin.com/in/stefan-jocić)",
+  "license": "GPL-2.0-or-later",
+  "engines": {
+	"node": ">=14.0.0",
+	"npm": ">=6.0.0"
+  },
+  "devDependencies": {
+	"@babel/core": "^7.16.0",
+	"@babel/plugin-syntax-dynamic-import": "^7.8.3",
+	"@babel/preset-env": "^7.16.4",
+	"autoprefixer": "^10.4.0",
+	"babel-loader": "^8.2.3",
+	"clean-webpack-plugin": "^4.0.0",
+	"css-loader": "^5.2.7",
+	"imagemin-webpack-plugin": "^2.4.2",
+	"mini-css-extract-plugin": "^1.6.2",
+	"postcss": "^8.4.0",
+	"postcss-combine-media-query": "^1.0.1",
+	"postcss-loader": "^5.3.0",
+	"postcss-preset-env": "^7.4.3",
+	"postcss-sort-media-queries": "^4.3.0",
+	"sass": "^1.50.0",
+	"sass-loader": "^11.1.1",
+	"style-loader": "^2.0.0",
+	"webpack": "^5.72.0",
+	"webpack-cli": "^4.9.1"
+  },
+  "dependencies": {
+	"bootstrap": "^5.1.3",
+	"regenerator-runtime": "^0.13.9"
+  }
+}

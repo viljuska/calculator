@@ -1,0 +1,38 @@
+$max_viewport: 1920;
+$min_viewport: 575;
+$responsive_font_size: unquote("min(calc(var(--min-font-px) + (var(--max-font) - var(--min-font)) * ((100vw - #{$min_viewport}px) / #{$max_viewport - $min_viewport})), var(--max-font-px))");
+
+@mixin font_sizes($min, $max) {
+	--min-font-px: #{$min}px;
+	--min-font: #{$min};
+	--max-font: #{$max};
+	--max-font-px: #{$max}px;
+}
+
+@mixin line_clamp($rows: 3) {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: #{$rows};
+	overflow: hidden;
+}
+
+@mixin sr_only() {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	white-space: normal;
+	border: 0;
+	margin: -1px;
+}
+
+@mixin color_gradient($gradient) {
+	background-image: $gradient;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
